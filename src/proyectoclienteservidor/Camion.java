@@ -16,6 +16,6 @@ public class Camion extends Vehiculo{
 
     @Override
     public double calcularTarifa(int horas) {
-        return horas * 5.0; // Ejemplo: $5 por hora
+        return horas * 5.0; //$5 x hora
     }
 }

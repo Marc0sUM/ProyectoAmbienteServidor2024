@@ -23,7 +23,7 @@ public class EspacioParqueo {
     public void asignarVehiculo(Vehiculo vehiculo){
         
         if(ocupado){
-            throw new IllegalStateException("El espacio ya esta ocupado");
+            System.out.println("El espacio ya esta ocupado");
         }
         this.vehiculo = vehiculo;
         this.ocupado = true;
@@ -31,7 +31,7 @@ public class EspacioParqueo {
     
     public Vehiculo liberarEspacio(){
         if(!ocupado){
-            throw new IllegalStateException("El espacio ya esta vacio");
+            System.out.println("El espacio ya esta vacio");
     }
         Vehiculo vehiculoSaliente = vehiculo;
         vehiculo = null;

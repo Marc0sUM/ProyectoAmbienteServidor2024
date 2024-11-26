@@ -50,7 +50,7 @@ public class Parqueo implements ReglasParqueo {
                 return;
             }
         }
-        throw new IllegalArgumentException("El vehículo con placa " + placa + " no está en el parqueadero.");
+        System.out.println("El vehículo con placa " + placa + " no está en el parqueadero.");
     }
 
     public void mostrarEstado() {
