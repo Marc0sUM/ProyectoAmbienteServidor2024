@@ -34,5 +34,5 @@ abstract class Vehiculo {
         this.propietaio = propietaio;
     }
     
-    public abstract double calcularTarifa(int horas);
+    public abstract double calcularTarifa(int horas); 
 }

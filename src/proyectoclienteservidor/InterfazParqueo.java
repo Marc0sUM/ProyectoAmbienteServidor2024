@@ -212,7 +212,7 @@ public class InterfazParqueo extends javax.swing.JFrame {
             String placa = txtPlaca.getText();
             String propietario = txtPropietario.getText();
             String tipo = (String) cbTipo.getSelectedItem();
-
+            
             if (placa.isEmpty() || propietario.isEmpty() || tipo == null) {
                 JOptionPane.showMessageDialog(null, "Complete todos los campos.");
                 return;
@@ -235,6 +235,8 @@ public class InterfazParqueo extends javax.swing.JFrame {
             }
 
             parqueadero.parquearVehiculo(vehiculo);
+            Consultas conVehiculo = new Consultas();
+            conVehiculo.registrar(vehiculo);
             JOptionPane.showMessageDialog(null, "Vehículo parqueado correctamente.");
             actualizarTabla();
         } catch (Exception e) {
